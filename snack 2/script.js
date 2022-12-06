@@ -70,7 +70,7 @@ const profiles = people.map((person)=>{
         answer = ' il profilo inserito non può guidare'
     }
 
-    return 'candidato: ' + person.name + ' ' + person.surname +
+    return 'candidato: ' + person.name + ' ' + person.surname + ' ' +
         'età: ' + person.age + answer;
 
 });
