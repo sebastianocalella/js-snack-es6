@@ -61,15 +61,19 @@ const people = [
     }
 ]
 
-people.map((person)=>{
+const profiles = people.map((person)=>{
+
     let answer;
     if(person.age>18){
-        answer = 'il profilo inserito può guidare'
+        answer = ' il profilo inserito può guidare'
     } else {
-        answer = 'il profilo inserito non può guidare'
+        answer = ' il profilo inserito non può guidare'
     }
-    return 'nome: ' + person.nome +
-        'cognome: ' + person.surname +
-        'età: ' + age + answer;
 
-})
+    return 'candidato: ' + person.name + ' ' + person.surname +
+        'età: ' + person.age + answer;
+
+});
+
+console.log(profiles);
+
